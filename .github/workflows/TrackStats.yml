@@ -1,0 +1,95 @@
+# Save this file to: .github/workflows/track-stats.yml  in your repo
+# (GitHub only picks up workflows that live in that exact folder.)
+
+name: Track Brawl Stars Stats
+
+on:
+  schedule:
+    # GitHub Actions cron is always UTC -- there's no "timezone" field.
+    # Johannesburg is UTC+2 year-round (no daylight saving), so 8:00 AM
+    # local time is 6:00 AM UTC.
+    - cron: '0 6 * * *'
+  workflow_dispatch: {}   # lets you trigger it manually from the Actions tab
+
+# Prevents two runs from overlapping and racing to push at the same time.
+concurrency:
+  group: brawl-tracker
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # needed so the workflow can commit the updated CSVs back
+  pages: write       # needed to publish to GitHub Pages
+  id-token: write    # needed for the official Pages deploy action
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 'Brawl Stars Tracker'   # <-- files live in this subfolder
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tracker
+        env:
+          BS_API_TOKEN: ${{ secrets.BS_API_TOKEN }}
+          BS_PLAYER_TAG: ${{ secrets.BS_PLAYER_TAG }}
+        run: python brawl_tracker.py
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "brawl-tracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add brawl_history.csv brawler_history.csv battle_log.csv catalog.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update stats $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase
+            git push
+          fi
+
+  deploy-pages:
+    needs: track           # only runs once the tracker job above has finished
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          # IMPORTANT: without this, checkout defaults to github.sha -- the
+          # commit that existed when the workflow was TRIGGERED, which is
+          # fixed for the whole run. It does NOT pick up whatever the track
+          # job just pushed, even though this job runs after it. Explicitly
+          # checking out the branch instead fetches its current tip at the
+          # moment this step runs, which by now includes track's new commit.
+          ref: main
+
+      - name: Assemble the site
+        run: |
+          mkdir -p _site
+          cp "Brawl Stars Tracker/dashboard.html" _site/index.html
+          cp "Brawl Stars Tracker/brawl_history.csv" _site/ 2>/dev/null || true
+          cp "Brawl Stars Tracker/brawler_history.csv" _site/ 2>/dev/null || true
+          cp "Brawl Stars Tracker/battle_log.csv" _site/ 2>/dev/null || true
+          cp "Brawl Stars Tracker/catalog.json" _site/ 2>/dev/null || true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
