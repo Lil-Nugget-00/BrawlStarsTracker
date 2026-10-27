@@ -49,3 +49,28 @@ battle_time,mode,map,brawler_used,outcome,rank,trophy_change,was_star_player
 20261026T061413.000Z,duels,False Sense Of Security,,victory,,,False
 20261025T193726.000Z,bounty,No Excuses,EDGAR,defeat,,,False
 20261025T193435.000Z,bounty,No Excuses,DARRYL,defeat,,,False
+20261027T083322.000Z,duoShowdown,Crossing the Coast,PENNY,,2,7,False
+20261027T083148.000Z,duoShowdown,Crossing the Coast,PENNY,,1,12,False
+20261027T083022.000Z,duoShowdown,Crossing the Coast,PENNY,,4,2,False
+20261027T082803.000Z,duoShowdown,Crossing the Coast,PENNY,,1,12,False
+20261027T082734.000Z,duoShowdown,Crossing the Coast,PENNY,,5,5,False
+20261027T082538.000Z,duoShowdown,Crossing the Coast,PENNY,,1,14,False
+20261027T082432.000Z,duoShowdown,Crossing the Coast,PENNY,,3,5,False
+20261027T082243.000Z,duoShowdown,Crossing the Coast,PENNY,,2,7,False
+20261027T082112.000Z,duoShowdown,Crossing the Coast,PENNY,,1,12,False
+20261027T082007.000Z,duoShowdown,Crossing the Coast,PENNY,,3,5,False
+20261027T081515.000Z,soloShowdown,Crossing the Coast,MAISIE,,4,8,False
+20261027T074021.000Z,soloShowdown,Crossing the Coast,COLT,,2,10,False
+20261027T073923.000Z,soloShowdown,Crossing the Coast,COLT,,8,-1,False
+20261027T073813.000Z,soloShowdown,Crossing the Coast,COLT,,9,-1,False
+20261027T073758.000Z,soloShowdown,Crossing the Coast,COLT,,1,13,False
+20261027T073603.000Z,soloShowdown,Crossing the Coast,COLT,,1,13,False
+20261027T073534.000Z,soloShowdown,Crossing the Coast,COLT,,8,-1,False
+20261027T073129.000Z,soloShowdown,Crossing the Coast,DARRYL,,7,1,False
+20261027T073121.000Z,soloShowdown,Crossing the Coast,DARRYL,,2,10,False
+20261027T072204.000Z,soloShowdown,Crossing the Coast,EDGAR,,1,17,False
+20261027T071807.000Z,soloShowdown,Crossing the Coast,COSMO,,2,12,False
+20261027T071623.000Z,soloShowdown,Crossing the Coast,COSMO,,1,14,False
+20261027T071437.000Z,soloShowdown,Crossing the Coast,COSMO,,2,10,False
+20261027T071407.000Z,soloShowdown,Crossing the Coast,COSMO,,7,3,False
+20261027T070210.000Z,soloShowdown,Crossing the Coast,MAISIE,,1,15,False
