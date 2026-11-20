@@ -523,3 +523,28 @@ battle_time,mode,map,brawler_used,outcome,rank,trophy_change,was_star_player
 20261118T211803.000Z,soloShowdown,Starfruit Supernova,CARL,,2,21,False
 20261118T211653.000Z,soloShowdown,Starfruit Supernova,CARL,,4,10,False
 20261118T211517.000Z,soloShowdown,Starfruit Supernova,CARL,,9,-3,False
+20261120T085140.000Z,brawlBall,Sneaky Fields,BONNIE,defeat,,,False
+20261120T085005.000Z,heist,Safe Zone,SPIKE,victory,,,False
+20261120T084702.000Z,heist,Hot Potato,RICO,defeat,,,False
+20261120T084437.000Z,knockout,Belle's Rock,RICO,defeat,,,False
+20261120T083523.000Z,knockout,Opening Move,CARL,victory,,15,False
+20261120T083407.000Z,knockout,Opening Move,CARL,victory,,14,False
+20261120T083226.000Z,knockout,Opening Move,CARL,victory,,13,False
+20261120T083024.000Z,knockout,Opening Move,CARL,victory,,12,False
+20261120T082846.000Z,knockout,Opening Move,CARL,victory,,11,False
+20261120T082710.000Z,knockout,Opening Move,CARL,victory,,10,False
+20261120T082558.000Z,knockout,Opening Move,CARL,defeat,,-3,False
+20261120T082411.000Z,knockout,Opening Move,CARL,victory,,13,False
+20261120T082115.000Z,soloShowdown,Cavern Churn,LARRY & LAWRIE,,1,,False
+20261120T081924.000Z,soloShowdown,Cavern Churn,LARRY & LAWRIE,,1,,False
+20261120T081747.000Z,soloShowdown,Cavern Churn,LARRY & LAWRIE,,1,,False
+20261120T081548.000Z,soloShowdown,Cavern Churn,GROM,,2,,False
+20261120T081405.000Z,soloShowdown,Cavern Churn,LARRY & LAWRIE,,3,,False
+20261120T081051.000Z,soloShowdown,Cavern Churn,DYNAMIKE,,8,,False
+20261120T074809.000Z,soloShowdown,Truth,CARL,,3,10,False
+20261120T074615.000Z,soloShowdown,Truth,CARL,,1,14,False
+20261120T074501.000Z,soloShowdown,Truth,CARL,,9,-3,False
+20261120T074451.000Z,soloShowdown,Truth,CARL,,2,10,False
+20261120T074246.000Z,soloShowdown,Truth,CARL,,2,14,False
+20261120T074117.000Z,soloShowdown,Truth,CARL,,2,13,False
+20261120T073942.000Z,soloShowdown,Truth,CARL,,1,15,False
