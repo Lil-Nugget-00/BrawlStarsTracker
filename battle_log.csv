@@ -598,3 +598,28 @@ battle_time,mode,map,brawler_used,outcome,rank,trophy_change,was_star_player
 20261121T130736.000Z,soloShowdown,Feast or Famine,BERRY,,4,10,False
 20261121T130644.000Z,soloShowdown,Feast or Famine,BERRY,,3,11,False
 20261121T130410.000Z,soloShowdown,Feast or Famine,BERRY,,1,13,False
+20261122T215711.000Z,knockout,Pincer Movement,EDGAR,defeat,,-3,False
+20261122T215535.000Z,knockout,Pincer Movement,EDGAR,victory,,12,True
+20261122T215336.000Z,knockout,Pincer Movement,EDGAR,victory,,11,False
+20261122T215141.000Z,soloShowdown,Scorched Stone,OLLIE,,1,,False
+20261122T214941.000Z,soloShowdown,Scorched Stone,MOE,,10,,False
+20261122T213822.000Z,soloShowdown,Lilypond Grove,EDGAR,,1,13,False
+20261122T213713.000Z,soloShowdown,Lilypond Grove,EDGAR,,10,-4,False
+20261122T130239.000Z,soloShowdown,Cavern Churn,MICO,,2,,False
+20261122T130045.000Z,soloShowdown,Cavern Churn,MICO,,1,,False
+20261122T125815.000Z,soloShowdown,Cavern Churn,FANG,,6,,False
+20261122T125318.000Z,duoShowdown,Flying Fantasies,GUS,,1,21,False
+20261122T125043.000Z,duoShowdown,Flying Fantasies,GUS,,1,21,False
+20261122T124746.000Z,duoShowdown,Flying Fantasies,GUS,,1,20,False
+20261122T124541.000Z,duoShowdown,Flying Fantasies,GUS,,2,13,False
+20261122T124258.000Z,duoShowdown,Flying Fantasies,GUS,,1,18,False
+20261122T124118.000Z,duoShowdown,Flying Fantasies,GUS,,2,11,False
+20261122T123954.000Z,duoShowdown,Flying Fantasies,GUS,,3,1,False
+20261122T123753.000Z,duoShowdown,Flying Fantasies,GUS,,1,16,False
+20261122T123517.000Z,duoShowdown,Flying Fantasies,GUS,,1,15,False
+20261122T123333.000Z,duoShowdown,Flying Fantasies,GUS,,3,1,False
+20261122T123021.000Z,duoShowdown,Flying Fantasies,GUS,,1,14,False
+20261122T122738.000Z,duoShowdown,Flying Fantasies,GUS,,1,13,False
+20261122T122512.000Z,duoShowdown,Flying Fantasies,GUS,,1,12,False
+20261122T122200.000Z,duoShowdown,Flying Fantasies,GUS,,2,5,False
+20261122T121711.000Z,duoShowdown,Flying Fantasies,GUS,,4,-4,False
